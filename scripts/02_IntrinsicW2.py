@@ -18,6 +18,10 @@ but are now repository-relative:
 intrinsic_wasserstein/data/{INDEX}_intrinsic_w2.txt
 """
 
+from pathlib import Path
+import numpy as np
+import pandas as pd
+from scipy.stats import skew, kurtosis
 import matplotlib.pyplot as plt
 
 
