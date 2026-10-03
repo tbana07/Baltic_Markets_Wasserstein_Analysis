@@ -1,0 +1,64 @@
+MOVING BLOCK BOOTSTRAP (MBB) FOR QUEANTILE WASSERSTEIN DISTANCE (WINDOW=30)
+===========================================================================
+INDEX: DAX
+===========================================================================
+Loading: C:\Users\DELL\files\Wasserstein\wasserstein_quantiles\DAX_quantile_w2.txt
+Normal observations: 3140
+Stress observations: 349
+    0_5pct | R = 0.7115 | 95% CI = [0.4079, 1.0905] | R=1 inside CI: True
+   5_25pct | R = 0.8983 | 95% CI = [0.6823, 1.0573] | R=1 inside CI: True
+  25_75pct | R = 1.1630 | 95% CI = [1.0453, 1.3274] | R=1 inside CI: False
+  75_95pct | R = 0.8613 | 95% CI = [0.6952, 1.0352] | R=1 inside CI: True
+ 95_100pct | R = 1.0311 | 95% CI = [0.7291, 1.4495] | R=1 inside CI: True
+
+===========================================================================
+INDEX: WIG
+===========================================================================
+Loading: C:\Users\DELL\files\Wasserstein\wasserstein_quantiles\WIG_quantile_w2.txt
+Normal observations: 3090
+Stress observations: 344
+    0_5pct | R = 0.8106 | 95% CI = [0.2536, 1.3811] | R=1 inside CI: True
+   5_25pct | R = 1.0787 | 95% CI = [0.8360, 1.4209] | R=1 inside CI: True
+  25_75pct | R = 1.0680 | 95% CI = [0.9534, 1.2516] | R=1 inside CI: True
+  75_95pct | R = 0.9299 | 95% CI = [0.8004, 1.0708] | R=1 inside CI: True
+ 95_100pct | R = 0.8981 | 95% CI = [0.6893, 1.1960] | R=1 inside CI: True
+
+===========================================================================
+INDEX: OMXT
+===========================================================================
+Loading: C:\Users\DELL\files\Wasserstein\wasserstein_quantiles\OMXT_quantile_w2.txt
+Normal observations: 3104
+Stress observations: 345
+    0_5pct | R = 0.8667 | 95% CI = [0.5181, 1.3572] | R=1 inside CI: True
+   5_25pct | R = 1.3618 | 95% CI = [1.0844, 1.7966] | R=1 inside CI: False
+  25_75pct | R = 1.0691 | 95% CI = [0.9069, 1.2808] | R=1 inside CI: True
+  75_95pct | R = 1.0311 | 95% CI = [0.8387, 1.2615] | R=1 inside CI: True
+ 95_100pct | R = 0.7388 | 95% CI = [0.5219, 1.1180] | R=1 inside CI: True
+
+===========================================================================
+INDEX: OMXR
+===========================================================================
+Loading: C:\Users\DELL\files\Wasserstein\wasserstein_quantiles\OMXR_quantile_w2.txt
+Normal observations: 3077
+Stress observations: 342
+    0_5pct | R = 1.6690 | 95% CI = [0.9552, 2.3380] | R=1 inside CI: True
+   5_25pct | R = 1.2677 | 95% CI = [1.0415, 1.5076] | R=1 inside CI: False
+  25_75pct | R = 0.8132 | 95% CI = [0.7152, 0.9253] | R=1 inside CI: False
+  75_95pct | R = 1.2086 | 95% CI = [0.9616, 1.5344] | R=1 inside CI: True
+ 95_100pct | R = 1.5857 | 95% CI = [1.1004, 1.9549] | R=1 inside CI: False
+
+===========================================================================
+INDEX: OMXV
+===========================================================================
+Loading: C:\Users\DELL\files\Wasserstein\wasserstein_quantiles\OMXV_quantile_w2.txt
+Normal observations: 3082
+Stress observations: 343
+    0_5pct | R = 1.7483 | 95% CI = [1.1586, 2.7123] | R=1 inside CI: False
+   5_25pct | R = 1.5345 | 95% CI = [1.2830, 1.9395] | R=1 inside CI: False
+  25_75pct | R = 0.9444 | 95% CI = [0.8130, 1.0852] | R=1 inside CI: True
+  75_95pct | R = 0.9094 | 95% CI = [0.6706, 1.1276] | R=1 inside CI: True
+ 95_100pct | R = 0.9992 | 95% CI = [0.7153, 1.4781] | R=1 inside CI: True
+
+===========================================================================
+MOVING-BLOCK BOOTSTRAP FINISHED
+===========================================================================

@@ -1,0 +1,151 @@
+INTRINSIC WASSERSTEIN DISTANCE — VOLATILITY REGIME ANALYSIS
+================================================================================
+
+Period: 2012-01-02 to 2025-12-30
+Rolling window: 30 trading days
+Returns: logarithmic returns
+Volatility: annualized rolling standard deviation
+Stress definition: top 10% of volatility observations
+
+Intrinsic W2 compares consecutive 30-day empirical return distributions.
+Normalized W2 standardizes each distribution separately before comparison.
+
+================================================================================
+OMXT
+================================================================================
+
+OBSERVATIONS
+Total:  3449
+Normal: 3104
+Stress: 345
+
+VOLATILITY
+Stress threshold: 0.134073
+Mean normal volatility: 0.082123
+Mean stress volatility: 0.228918
+
+RAW W2
+E[W2 | normal]: 0.0030888549
+E[W2 | stress]: 0.0102094721
+Stress / normal: 3.305261
+
+NORMALIZED W2
+E[W2 | normal]: 0.3206596744
+E[W2 | stress]: 0.3520204891
+Stress / normal: 1.097801
+
+RAW / NORMALIZED W2 RATIO
+E[ratio | normal]: 0.010154
+E[ratio | stress]: 0.031202
+
+================================================================================
+OMXR
+================================================================================
+
+OBSERVATIONS
+Total:  3419
+Normal: 3077
+Stress: 342
+
+VOLATILITY
+Stress threshold: 0.213473
+Mean normal volatility: 0.120236
+Mean stress volatility: 0.376253
+
+RAW W2
+E[W2 | normal]: 0.0048777297
+E[W2 | stress]: 0.0179965932
+Stress / normal: 3.689543
+
+NORMALIZED W2
+E[W2 | normal]: 0.3465885366
+E[W2 | stress]: 0.5092601718
+Stress / normal: 1.469351
+
+RAW / NORMALIZED W2 RATIO
+E[ratio | normal]: 0.013934
+E[ratio | stress]: 0.038100
+
+================================================================================
+OMXV
+================================================================================
+
+OBSERVATIONS
+Total:  3425
+Normal: 3082
+Stress: 343
+
+VOLATILITY
+Stress threshold: 0.119821
+Mean normal volatility: 0.062772
+Mean stress volatility: 0.196288
+
+RAW W2
+E[W2 | normal]: 0.0026088586
+E[W2 | stress]: 0.0093156932
+Stress / normal: 3.570793
+
+NORMALIZED W2
+E[W2 | normal]: 0.3119960688
+E[W2 | stress]: 0.4385681582
+Stress / normal: 1.405685
+
+RAW / NORMALIZED W2 RATIO
+E[ratio | normal]: 0.008147
+E[ratio | stress]: 0.023216
+
+================================================================================
+WIG
+================================================================================
+
+OBSERVATIONS
+Total:  3434
+Normal: 3090
+Stress: 344
+
+VOLATILITY
+Stress threshold: 0.228018
+Mean normal volatility: 0.148732
+Mean stress volatility: 0.314559
+
+RAW W2
+E[W2 | normal]: 0.0044838172
+E[W2 | stress]: 0.0114598982
+Stress / normal: 2.555835
+
+NORMALIZED W2
+E[W2 | normal]: 0.2717970110
+E[W2 | stress]: 0.2719656112
+Stress / normal: 1.000620
+
+RAW / NORMALIZED W2 RATIO
+E[ratio | normal]: 0.017048
+E[ratio | stress]: 0.044624
+
+================================================================================
+DAX
+================================================================================
+
+OBSERVATIONS
+Total:  3489
+Normal: 3140
+Stress: 349
+
+VOLATILITY
+Stress threshold: 0.254194
+Mean normal volatility: 0.151318
+Mean stress volatility: 0.341522
+
+RAW W2
+E[W2 | normal]: 0.0045963458
+E[W2 | stress]: 0.0118598042
+Stress / normal: 2.580268
+
+NORMALIZED W2
+E[W2 | normal]: 0.2840479584
+E[W2 | stress]: 0.2869445974
+Stress / normal: 1.010198
+
+RAW / NORMALIZED W2 RATIO
+E[ratio | normal]: 0.017190
+E[ratio | stress]: 0.042040

@@ -1,0 +1,344 @@
+Regression of normalized Wasserstein distance on volatility, skewness and kurtosis
+================================================================================
+
+Model:
+W2_normalized(t) = b0 + b1*sigma(t) + b2*S(t) + b3*K(t) + epsilon(t)
+
+Inference: OLS coefficients with Newey-West HAC standard errors.
+Automatic HAC lag: L = floor(4 * (T / 100)^(2/9)).
+
+
+================================================================================
+DAX
+================================================================================
+
+Number of observations: 3489
+Date range: 2012-03-26 to 2025-12-30
+Newey-West HAC lag length: 8
+
+R-squared:          0.108473
+Adjusted R-squared: 0.107705
+HAC F-statistic:         21.935896
+HAC F-statistic p-value: 4.537831e-14
+
+Coefficients with Newey-West HAC standard errors
+--------------------------------------------------------------------------------
+Variable                          Coefficient    HAC Std. Error     HAC t-stat    HAC p-value
+const                              0.27131716        0.00990296      27.397582  7.764787e-150
+volatility_30d_annualized         -0.01579071        0.05219296      -0.302545   7.622549e-01
+skewness_30d                       0.00790600        0.00649485       1.217271   2.235836e-01
+kurtosis_excess_30d                0.01733253        0.00219768       7.886746   4.116519e-15
+
+95% Confidence Intervals — Newey-West HAC
+--------------------------------------------------------------------------------
+const                         [0.25190097, 0.29073335]
+volatility_30d_annualized     [-0.11812257, 0.08654115]
+skewness_30d                  [-0.00482811, 0.02064010]
+kurtosis_excess_30d           [0.01302367, 0.02164140]
+
+Residual statistics
+--------------------------------------------------------------------------------
+Mean residual: 0.00000000
+Std. residual: 0.08880968
+Min residual: -0.17081309
+Max residual: 0.48737901
+
+Full OLS summary with Newey-West HAC inference
+--------------------------------------------------------------------------------
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          w2_normalized   R-squared:                       0.108
+Model:                            OLS   Adj. R-squared:                  0.108
+Method:                 Least Squares   F-statistic:                     21.94
+Date:                Sat, 03 Oct 2026   Prob (F-statistic):           4.54e-14
+Time:                        15:15:28   Log-Likelihood:                 3497.6
+No. Observations:                3489   AIC:                            -6987.
+Df Residuals:                    3485   BIC:                            -6963.
+Df Model:                           3                                         
+Covariance Type:                  HAC                                         
+=============================================================================================
+                                coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------
+const                         0.2713      0.010     27.398      0.000       0.252       0.291
+volatility_30d_annualized    -0.0158      0.052     -0.303      0.762      -0.118       0.087
+skewness_30d                  0.0079      0.006      1.217      0.224      -0.005       0.021
+kurtosis_excess_30d           0.0173      0.002      7.887      0.000       0.013       0.022
+==============================================================================
+Omnibus:                      665.483   Durbin-Watson:                   0.189
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1324.557
+Skew:                           1.139   Prob(JB):                    2.38e-288
+Kurtosis:                       4.980   Cond. No.                         27.1
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 8 lags and with small sample correction
+
+
+================================================================================
+WIG
+================================================================================
+
+Number of observations: 3434
+Date range: 2012-03-27 to 2025-12-30
+Newey-West HAC lag length: 8
+
+R-squared:          0.149290
+Adjusted R-squared: 0.148545
+HAC F-statistic:         32.959459
+HAC F-statistic p-value: 5.373174e-21
+
+Coefficients with Newey-West HAC standard errors
+--------------------------------------------------------------------------------
+Variable                          Coefficient    HAC Std. Error     HAC t-stat    HAC p-value
+const                              0.27750204        0.00861887      32.197022  5.777333e-199
+volatility_30d_annualized         -0.13241246        0.04882978      -2.711715   6.726980e-03
+skewness_30d                       0.01345038        0.00733398       1.833982   6.674324e-02
+kurtosis_excess_30d                0.02376193        0.00249269       9.532633   2.806545e-21
+
+95% Confidence Intervals — Newey-West HAC
+--------------------------------------------------------------------------------
+const                         [0.26060340, 0.29440068]
+volatility_30d_annualized     [-0.22815085, -0.03667407]
+skewness_30d                  [-0.00092902, 0.02782979]
+kurtosis_excess_30d           [0.01887462, 0.02864924]
+
+Residual statistics
+--------------------------------------------------------------------------------
+Mean residual: 0.00000000
+Std. residual: 0.08188917
+Min residual: -0.24240895
+Max residual: 0.31122824
+
+Full OLS summary with Newey-West HAC inference
+--------------------------------------------------------------------------------
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          w2_normalized   R-squared:                       0.149
+Model:                            OLS   Adj. R-squared:                  0.149
+Method:                 Least Squares   F-statistic:                     32.96
+Date:                Sat, 03 Oct 2026   Prob (F-statistic):           5.37e-21
+Time:                        15:15:28   Log-Likelihood:                 3721.1
+No. Observations:                3434   AIC:                            -7434.
+Df Residuals:                    3430   BIC:                            -7410.
+Df Model:                           3                                         
+Covariance Type:                  HAC                                         
+=============================================================================================
+                                coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------
+const                         0.2775      0.009     32.197      0.000       0.261       0.294
+volatility_30d_annualized    -0.1324      0.049     -2.712      0.007      -0.228      -0.037
+skewness_30d                  0.0135      0.007      1.834      0.067      -0.001       0.028
+kurtosis_excess_30d           0.0238      0.002      9.533      0.000       0.019       0.029
+==============================================================================
+Omnibus:                      340.931   Durbin-Watson:                   0.197
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              451.371
+Skew:                           0.831   Prob(JB):                     9.68e-99
+Kurtosis:                       3.624   Cond. No.                         28.2
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 8 lags and with small sample correction
+
+
+================================================================================
+OMXT
+================================================================================
+
+Number of observations: 3449
+Date range: 2012-03-27 to 2025-12-30
+Newey-West HAC lag length: 8
+
+R-squared:          0.115195
+Adjusted R-squared: 0.114425
+HAC F-statistic:         22.226129
+HAC F-statistic p-value: 2.989133e-14
+
+Coefficients with Newey-West HAC standard errors
+--------------------------------------------------------------------------------
+Variable                          Coefficient    HAC Std. Error     HAC t-stat    HAC p-value
+const                              0.30825439        0.00932300      33.063877  1.841207e-208
+volatility_30d_annualized         -0.12072182        0.07864898      -1.534945   1.248893e-01
+skewness_30d                       0.00133198        0.00567313       0.234788   8.143874e-01
+kurtosis_excess_30d                0.01449396        0.00189452       7.650481   2.581767e-14
+
+95% Confidence Intervals — Newey-West HAC
+--------------------------------------------------------------------------------
+const                         [0.28997523, 0.32653355]
+volatility_30d_annualized     [-0.27492516, 0.03348152]
+skewness_30d                  [-0.00979106, 0.01245502]
+kurtosis_excess_30d           [0.01077947, 0.01820844]
+
+Residual statistics
+--------------------------------------------------------------------------------
+Mean residual: -0.00000000
+Std. residual: 0.11287402
+Min residual: -0.26720967
+Max residual: 0.46383233
+
+Full OLS summary with Newey-West HAC inference
+--------------------------------------------------------------------------------
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          w2_normalized   R-squared:                       0.115
+Model:                            OLS   Adj. R-squared:                  0.114
+Method:                 Least Squares   F-statistic:                     22.23
+Date:                Sat, 03 Oct 2026   Prob (F-statistic):           2.99e-14
+Time:                        15:15:28   Log-Likelihood:                 2630.5
+No. Observations:                3449   AIC:                            -5253.
+Df Residuals:                    3445   BIC:                            -5228.
+Df Model:                           3                                         
+Covariance Type:                  HAC                                         
+=============================================================================================
+                                coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------
+const                         0.3083      0.009     33.064      0.000       0.290       0.327
+volatility_30d_annualized    -0.1207      0.079     -1.535      0.125      -0.275       0.033
+skewness_30d                  0.0013      0.006      0.235      0.814      -0.010       0.012
+kurtosis_excess_30d           0.0145      0.002      7.650      0.000       0.011       0.018
+==============================================================================
+Omnibus:                      463.213   Durbin-Watson:                   0.162
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              702.810
+Skew:                           0.960   Prob(JB):                    2.44e-153
+Kurtosis:                       4.099   Cond. No.                         62.2
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 8 lags and with small sample correction
+
+
+================================================================================
+OMXR
+================================================================================
+
+Number of observations: 3419
+Date range: 2012-03-26 to 2025-12-30
+Newey-West HAC lag length: 8
+
+R-squared:          0.321647
+Adjusted R-squared: 0.321051
+HAC F-statistic:         70.237336
+HAC F-statistic p-value: 4.502877e-44
+
+Coefficients with Newey-West HAC standard errors
+--------------------------------------------------------------------------------
+Variable                          Coefficient    HAC Std. Error     HAC t-stat    HAC p-value
+const                              0.29210646        0.01173401      24.893998  7.606951e-126
+volatility_30d_annualized          0.12564768        0.08379067       1.499543   1.338254e-01
+skewness_30d                       0.00464843        0.00687166       0.676463   4.987922e-01
+kurtosis_excess_30d                0.02052919        0.00198520      10.341113   1.058782e-24
+
+95% Confidence Intervals — Newey-West HAC
+--------------------------------------------------------------------------------
+const                         [0.26910006, 0.31511285]
+volatility_30d_annualized     [-0.03863724, 0.28993259]
+skewness_30d                  [-0.00882455, 0.01812141]
+kurtosis_excess_30d           [0.01663689, 0.02442149]
+
+Residual statistics
+--------------------------------------------------------------------------------
+Mean residual: 0.00000000
+Std. residual: 0.13380455
+Min residual: -0.68297941
+Max residual: 0.60692867
+
+Full OLS summary with Newey-West HAC inference
+--------------------------------------------------------------------------------
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          w2_normalized   R-squared:                       0.322
+Model:                            OLS   Adj. R-squared:                  0.321
+Method:                 Least Squares   F-statistic:                     70.24
+Date:                Sat, 03 Oct 2026   Prob (F-statistic):           4.50e-44
+Time:                        15:15:28   Log-Likelihood:                 2026.0
+No. Observations:                3419   AIC:                            -4044.
+Df Residuals:                    3415   BIC:                            -4020.
+Df Model:                           3                                         
+Covariance Type:                  HAC                                         
+=============================================================================================
+                                coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------
+const                         0.2921      0.012     24.894      0.000       0.269       0.315
+volatility_30d_annualized     0.1256      0.084      1.500      0.134      -0.039       0.290
+skewness_30d                  0.0046      0.007      0.676      0.499      -0.009       0.018
+kurtosis_excess_30d           0.0205      0.002     10.341      0.000       0.017       0.024
+==============================================================================
+Omnibus:                      625.410   Durbin-Watson:                   0.179
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1710.628
+Skew:                           0.973   Prob(JB):                         0.00
+Kurtosis:                       5.868   Cond. No.                         59.6
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 8 lags and with small sample correction
+
+
+================================================================================
+OMXV
+================================================================================
+
+Number of observations: 3425
+Date range: 2012-03-27 to 2025-12-30
+Newey-West HAC lag length: 8
+
+R-squared:          0.291653
+Adjusted R-squared: 0.291032
+HAC F-statistic:         93.016372
+HAC F-statistic p-value: 7.233007e-58
+
+Coefficients with Newey-West HAC standard errors
+--------------------------------------------------------------------------------
+Variable                          Coefficient    HAC Std. Error     HAC t-stat    HAC p-value
+const                              0.28169325        0.00914204      30.812950  3.287094e-184
+volatility_30d_annualized          0.05751723        0.11001581       0.522809   6.011412e-01
+skewness_30d                       0.00947247        0.00649729       1.457911   1.449569e-01
+kurtosis_excess_30d                0.02415486        0.00166909      14.471909   4.088262e-46
+
+95% Confidence Intervals — Newey-West HAC
+--------------------------------------------------------------------------------
+const                         [0.26376884, 0.29961766]
+volatility_30d_annualized     [-0.15818611, 0.27322056]
+skewness_30d                  [-0.00326649, 0.02221144]
+kurtosis_excess_30d           [0.02088235, 0.02742736]
+
+Residual statistics
+--------------------------------------------------------------------------------
+Mean residual: -0.00000000
+Std. residual: 0.11479841
+Min residual: -0.21970822
+Max residual: 0.54310868
+
+Full OLS summary with Newey-West HAC inference
+--------------------------------------------------------------------------------
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          w2_normalized   R-squared:                       0.292
+Model:                            OLS   Adj. R-squared:                  0.291
+Method:                 Least Squares   F-statistic:                     93.02
+Date:                Sat, 03 Oct 2026   Prob (F-statistic):           7.23e-58
+Time:                        15:15:28   Log-Likelihood:                 2554.3
+No. Observations:                3425   AIC:                            -5101.
+Df Residuals:                    3421   BIC:                            -5076.
+Df Model:                           3                                         
+Covariance Type:                  HAC                                         
+=============================================================================================
+                                coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------
+const                         0.2817      0.009     30.813      0.000       0.264       0.300
+volatility_30d_annualized     0.0575      0.110      0.523      0.601      -0.158       0.273
+skewness_30d                  0.0095      0.006      1.458      0.145      -0.003       0.022
+kurtosis_excess_30d           0.0242      0.002     14.472      0.000       0.021       0.027
+==============================================================================
+Omnibus:                     1036.307   Durbin-Watson:                   0.163
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             3080.072
+Skew:                           1.565   Prob(JB):                         0.00
+Kurtosis:                       6.433   Cond. No.                         81.7
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 8 lags and with small sample correction
+

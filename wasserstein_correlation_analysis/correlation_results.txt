@@ -1,0 +1,102 @@
+NORMALIZED WASSERSTEIN W2 vs VOLATILITY
+========================================================================
+
+Input series are precomputed normalized W2 and 30-day annualized volatility.
+
+Because these are rolling-window series, adjacent observations are serially dependent; ordinary iid correlation p-values are descriptive rather than a final time-series inference procedure.
+
+------------------------------------------------------------------------
+MARKET: DAX
+Observations: 3489
+
+LEVEL RELATIONSHIP
+Pearson r: -0.01242748
+Pearson p-value: 0.46305308
+Spearman rho: -0.07592692
+Spearman p-value: 7.132093e-06
+Distance correlation: 0.09811600
+OLS slope: -0.01508589
+OLS intercept: 0.28690749
+Linear regression R^2: 0.00015444
+
+FIRST-DIFFERENCE RELATIONSHIP
+Pearson r [Δ]: 0.08274090
+Spearman rho [Δ]: -0.01484634
+Distance correlation [Δ]: 0.19411928
+
+------------------------------------------------------------------------
+MARKET: WIG
+Observations: 3434
+
+LEVEL RELATIONSHIP
+Pearson r: -0.00566377
+Pearson p-value: 0.74005473
+Spearman rho: -0.03894444
+Spearman p-value: 0.022477998
+Distance correlation: 0.06207654
+OLS slope: -0.00707415
+OLS intercept: 0.27298356
+Linear regression R^2: 0.00003208
+
+FIRST-DIFFERENCE RELATIONSHIP
+Pearson r [Δ]: 0.03463798
+Spearman rho [Δ]: -0.03401145
+Distance correlation [Δ]: 0.17973689
+
+------------------------------------------------------------------------
+MARKET: OMXV
+Observations: 3425
+
+LEVEL RELATIONSHIP
+Pearson r: 0.29818900
+Pearson p-value: 2.7707989e-71
+Spearman rho: 0.30676518
+Spearman p-value: 1.5330337e-75
+Distance correlation: 0.32968138
+OLS slope: 0.78063728
+OLS intercept: 0.26523139
+Linear regression R^2: 0.08891668
+
+FIRST-DIFFERENCE RELATIONSHIP
+Pearson r [Δ]: 0.14637840
+Spearman rho [Δ]: -0.01252051
+Distance correlation [Δ]: 0.26882382
+
+------------------------------------------------------------------------
+MARKET: OMXR
+Observations: 3419
+
+LEVEL RELATIONSHIP
+Pearson r: 0.34567321
+Pearson p-value: 1.492974e-96
+Spearman rho: 0.23397434
+Spearman p-value: 9.7719163e-44
+Distance correlation: 0.34764560
+OLS slope: 0.56283872
+OLS intercept: 0.28077332
+Linear regression R^2: 0.11948997
+
+FIRST-DIFFERENCE RELATIONSHIP
+Pearson r [Δ]: 0.14521444
+Spearman rho [Δ]: -0.00988504
+Distance correlation [Δ]: 0.31777574
+
+------------------------------------------------------------------------
+MARKET: OMXT
+Observations: 3449
+
+LEVEL RELATIONSHIP
+Pearson r: 0.02134310
+Pearson p-value: 0.2101584
+Spearman rho: -0.03327477
+Spearman p-value: 0.050701264
+Distance correlation: 0.09368649
+OLS slope: 0.04335418
+OLS intercept: 0.31959968
+Linear regression R^2: 0.00045553
+
+FIRST-DIFFERENCE RELATIONSHIP
+Pearson r [Δ]: 0.03895420
+Spearman rho [Δ]: -0.03108086
+Distance correlation [Δ]: 0.24448313
+
