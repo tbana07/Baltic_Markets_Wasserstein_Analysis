@@ -6,7 +6,7 @@ root automatically with:
 
     Path(__file__).resolve().parents[1]
 
-Expected repository structure:
+Repository structure:
 
     data/raw/
     base_indicators/
@@ -18,7 +18,7 @@ Expected repository structure:
 
 The scripts process these indices:
 
-    DAX, WIG, OMXT, OMXR, OMXV
+    OMXT, OMXR, OMXV, WIG, DAX
 
 Recommended order:
 
