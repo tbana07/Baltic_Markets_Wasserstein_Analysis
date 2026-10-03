@@ -1,0 +1,91 @@
+# =========================
+# Python
+# =========================
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# IDE / Editors
+# =========================
+
+.vscode/
+.idea/
+*.code-workspace
+
+# =========================
+# Jupyter
+# =========================
+
+.ipynb_checkpoints/
+
+# =========================
+# Operating system
+# =========================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Temporary files
+# =========================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+~*
+
+# =========================
+# Python / tool caches
+# =========================
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# Generated plots
+# =========================
+# Uncomment these if plots should not be version-controlled
+
+# *.png
+
+# *.jpg
+
+# *.jpeg
+
+# *.pdf
+
+# =========================
+# Generated analysis output
+# =========================
+# Uncomment these if generated numerical results should not be version-controlled
+
+# base_indicators/
+
+# intrinsic_wasserstein/data/
+
+# intrinsic_wasserstein/plots/
+
+# wasserstein_quantiles/
+
+# wasserstein_correlation_analysis/
+
+# =========================
+# Local configuration
+# =========================
+
+.env
+.env.*
+!.env.example
