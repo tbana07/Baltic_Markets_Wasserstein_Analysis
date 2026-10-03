@@ -31,6 +31,8 @@ is comupted.
 
 Than rolling W_2 is compared with volatility and other conventional moments using Pearson, Spearman, Distance Correlation and OLS. Each markest is studied both in normall and stress conditions.
 
+![Alt text](https://github.com/tbana07/Wasserstein_Baltic/blob/main/wasserstein_correlation_analysis/plots/AdjustedR2ofW_2Reg.png)
+
 This is followed by analysis of shape changes in stress and normal regimes in each quantile of the distribution for each index. To adress the issue of small number of observations and temporal depandance between returns in consecutive rolling windows Moving-Block Bootstrap (MBB) is used. Results show large disproportions of change in W_2 between stress and normal situation in each quantile among Baltic Markets.
 
 ![Alt text](https://github.com/tbana07/Wasserstein_Baltic/blob/main/wasserstein_quantiles/plots/W2_quantile_ratio_bootstrap.png)
