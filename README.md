@@ -1,4 +1,4 @@
-# Baltic Stock Markets Distributional-Shape Homogenity - a Wasserstein distance analysis
+# Baltic Stock Markets Distributional-Shape Homogeneity - a Wasserstein distance analysis
 
 This repository contains the computational framework and results for a study of distributional similarity and shape changes in Baltic equity markets using the Wasserstein distance. (For full paper see, [*Baltic Stock Markets Distributional-Shape Homogenity - a Wasserstein distance analysis*](https://github.com/tbana07/Wasserstein_Baltic/blob/main/Baltic_Shape_Homogenity.pdf))
 
