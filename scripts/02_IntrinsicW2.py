@@ -16,6 +16,9 @@ Algorithms:
 Outputs preserve the established intrinsic_wasserstein_results structure,
 but are now repository-relative:
 intrinsic_wasserstein/data/{INDEX}_intrinsic_w2.txt
+
+Acknowledgement: Code for plotting the results written with
+help of ChatGPT by OpenAI.
 """
 
 from pathlib import Path
