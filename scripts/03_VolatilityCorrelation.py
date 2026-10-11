@@ -15,6 +15,9 @@ Algorithms:
 
 The script uses the precomputed files produced by BaseIndicators.py and
 IntrinsicW2.py and aligns them by date.
+
+Acknowledgement: Code used to plot the results written with
+help of ChatGPT by OpenAI.
 """
 
 from pathlib import Path
@@ -24,6 +27,9 @@ import matplotlib.pyplot as plt
 from scipy.stats import pearsonr, spearmanr
 from sklearn.linear_model import LinearRegression
 
+# ============================================================
+# PROJECT CONFIGURATION
+# ==========================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 W2_DIR = PROJECT_ROOT / "intrinsic_wasserstein" / "data"
@@ -35,6 +41,9 @@ MARKETS = ["DAX", "WIG", "OMXV", "OMXR", "OMXT"]
 W2_COLUMN = "w2_normalized"
 VOLATILITY_COLUMN = "volatility_30d"
 
+# ============================================================
+# CORRELATIONS
+# ==========================================================
 
 def distance_correlation(x, y):
     try:
@@ -185,6 +194,10 @@ def analyze_series(df):
         "diff_spearman_p": diff_spearman_p,
         "diff_distance_correlation": distance_correlation(dx, dy),
     }
+
+# ============================================================
+# PLOTS
+# ==========================================================
 
 
 def plot_scatter(df, index, stats):
