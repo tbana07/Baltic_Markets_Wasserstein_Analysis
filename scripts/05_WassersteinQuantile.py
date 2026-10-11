@@ -16,6 +16,9 @@ Outputs:
 wasserstein_quantiles/{INDEX}_quantile_w2.txt
 wasserstein_quantiles/{INDEX}_quantile_expected_values.txt
 and a combined expected-values table.
+
+Acknowledgement: Code used to plot the results written with
+help of ChatGPT by OpenAI.
 """
 
 from pathlib import Path
